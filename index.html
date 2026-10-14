@@ -1,178 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanta E-Sports</title>
-    <link rel="icon" href="/assets/logo/logo.png" type="image/png">
-    <link rel="stylesheet" href="/css/mainpage.css">
-    <link rel="stylesheet" href="/css/aboutus.css">
-    <link rel="stylesheet" href="/css/hero-about.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="/assets/logo.png" type="image/png">
 </head>
 
 <body>
-    <canvas id="space-background"></canvas>
+
 
     <nav class="navbar">
 
-        <div class="nav-left">
-            <a href="index.html" class="brand-container">
-                <img src="/assets/logo/logo.png" class="logo" alt="Vanta Logo">
-                <span class="brand-name">Vanta E-Sports</span>
-            </a>
+        <a href="index.html" class="nav-logo">
+            <img src="/assets/logo.png" alt="Vanta Logo">
+        </a>
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">Home</a>
+            </li>
+
+
+            <li class="nav-item">
+                <span class="nav-link">Teams ▾</span>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="/MainTeams.html">Team Übersicht</a></li>
+                    <li class="dropdown-item"><a href="/Buildyourteam.html">Baue dein Team</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="/socials.html" class="nav-link">Socials</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="faqs.html" class="nav-link">FAQs</a>
+            </li>
+        </ul>
+
+
+        <div class="nav-actions">
+            <a href="https://discord.gg" target="_blank" class="nav-btn-discord">Discord</a>
         </div>
 
-        <div class="nav-center">
-            <a href="index.html">HOME</a>
-
-            <div class="dropdown">
-                <a href="#">TEAMS</a>
-
-                <div class="dropdown-menu">
-                    <a href="MainTeams.html">MAIN TEAMS</a>
-                    <a href="Buildyourteam.html">BUILD YOUR TEAM</a>
-                </div>
-            </div>
-
-            <a href="socials.html">SOCIALS</a>
-            <a href="faq.html">FAQ</a>
-            <a href="https://discord.gg/GvcEEESMdD">DISCORD</a>
-        </div>
     </nav>
 
 
 
-    <header class="hero-section">
-        <div class="hero-content">
-            <span class="hero-badge"> Official Gaming Community</span>
-            <h1 class="hero-title">WILLKOMMEN BEI <span class="highlight">VANTA E-SPORTS</span></h1>
+
+    <main class="main-content">
+
+
+        <header class="hero-section">
+            <span class="hero-badge">Official Gaming Community</span>
+            <h1 class="hero-title">WILLKOMMEN BEI <br><span class="highlight">VANTA E-SPORTS</span></h1>
             <p class="hero-subtitle">Deine ultimative Plattform für Competitive Gaming. Werde Teil unserer Community,
                 trete Teams bei und dominiere das Spielfeld mit uns.</p>
+
             <div class="hero-cta-group">
                 <a href="MainTeams.html" class="btn-primary">JOIN THE TEAM</a>
-                <a href="https://discord.gg/GvcEEESMdD" class="btn-secondary">DISCORD</a>
+                <a href="https://discord.gg" target="_blank" class="btn-secondary">DISCORD</a>
             </div>
-        </div>
-        <div class="hero-glow-effect"></div>
-    </header>
+        </header>
 
 
-    <section class="about-section">
-        <div class="about-container">
-            <h2 class="section-heading">About Us</h2>
-            <h3 class="about-subheading">Wer sind wir?</h3>
-            <p class="about-text">
-                Gegründet aus der puren Leidenschaft für das Competitive Gaming, ist Vanta E-Sports mehr als nur eine
-                Organisation – wir sind eine Familie. Wir bieten ambitionierten Talenten im deutschsprachigen Raum ein
-                Zuhause, in dem sie sich unter professionellen Bedingungen weiterentwickeln können.
-            </p>
-            <p class="about-text">
-                Egal ob du die Rangliste im Taktik-Shooter stürmen oder durch die Arena fliegen willst: Bei uns zählen
-                Teamgeist, Respekt und der unbedingte Wille, sich stetig zu verbessern. Zusammen greifen wir nach den
-                Sternen.
-            </p>
-        </div>
-
-        <!-- Die 3 Info-Karten (Ziele, Mission, Events) direkt unter dem Text -->
-        <div class="cards-container">
-            <!-- Karte 1: Mission -->
-            <div class="info-card">
-                <div class="card-icon"></div>
-                <h3 class="card-title">Unsere Mission</h3>
-                <p class="card-text">Wir bieten talentierten Spielern eine professionelle Plattform, um ihr volles
-                    Potenzial auszuschöpfen und im E-Sports Fuß zu fassen.</p>
+        <section class="about-section">
+            <div class="about-header">
+                <h2>About Us</h2>
+                <h3 class="about-subheading">Wer sind wir?</h3>
             </div>
 
-            <!-- Karte 2: Community -->
-            <div class="info-card">
-                <div class="card-icon"></div>
-                <h3 class="card-title">Unsere Community</h3>
-                <p class="card-text">Ein starkes Netzwerk aus Gamern, Streamern und Fans. Bei uns findest du Teamplay,
-                    Zusammenhalt und Gleichgesinnte.</p>
-            </div>
-
-            <!-- Karte 3: Events -->
-            <div class="info-card">
-                <div class="card-icon"></div>
-                <h3 class="card-title">Unsere Events</h3>
-                <p class="card-text">Von packenden internen Turnieren bis hin zu offiziellen Cups – wir organisieren
-                    Events, die die Gaming-Zukunft prägen.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEKTION: TEAMLEITUNG -->
-    <section class="management-section">
-        <h2 class="section-heading">Teamleitung</h2>
-
-        <div class="management-grid">
-            <!-- Leader 1 -->
-            <div class="member-card">
-                <div class="member-avatar-wrapper">
-                    <img src="/assets/logo/Leader1.png" alt="Leader Avatar" class="member-avatar">
+            <div class="about-body">
+                <p class="accent-text">
+                    Gegründet aus der puren Leidenschaft für das Competitive Gaming, ist Vanta E-Sports mehr als nur
+                    eine Organisation – wir sind eine Familie.
+                </p>
+                <div class="secondary-text">
+                    <p>
+                        Wir bieten ambitionierten Talenten im deutschsprachigen Raum ein Zuhause, in dem sie sich unter
+                        professionellen Bedingungen weiterentwickeln können.
+                    </p>
+                    <p>
+                        Egal ob du die Rangliste im Taktik-Shooter stürmen oder durch die Arena fliegen willst: Bei uns
+                        zählen Teamgeist, Respekt und der unbedingte Wille, sich stetig zu verbessern. Zusammen greifen
+                        wir nach den Sternen.
+                    </p>
                 </div>
-                <h3 class="member-name">Adi</h3>
-                <span class="member-role">Leitung / E-Sports Management</span>
-                <p class="member-bio">Verantwortlich für die Organisation von Scrims, die strategische Planung sowie den
-                    Aufbau von Partnerschaften.</p>
             </div>
+        </section>
 
-            <!-- Leader 2 -->
-            <div class="member-card">
-                <div class="member-avatar-wrapper">
-                    <img src="/assets/logo/Leader2.png" alt="Leader Avatar" class="member-avatar">
+
+        <section class="cards-section">
+            <div class="cards-grid">
+                <div class="info-card">
+                    <h3>Unsere Mission</h3>
+                    <p>Wir bieten talentierten Spielern eine professionelle Plattform, um ihr volles Potenzial
+                        auszuschöpfen und im E-Sports Fuß zu fassen.</p>
                 </div>
-                <h3 class="member-name">Suxxah</h3>
-                <span class="member-role">Leitung / Founder</span>
-                <p class="member-bio">Gründer von Vanta E-Sports und verantwortlich für das Community Management sowie
-                    alle internen Abläufe.</p>
-            </div>
-
-            <!-- Leader 3 -->
-            <div class="member-card">
-                <div class="member-avatar-wrapper">
-                    <img src="/assets/logo/Leader3.png" alt="Leader Avatar" class="member-avatar">
+                <div class="info-card">
+                    <h3>Unsere Community</h3>
+                    <p>Ein starkes Netzwerk aus Gamern, Streamern und Fans. Bei uns findest du Teamplay, Zusammenhalt
+                        und Gleichgesinnte.</p>
                 </div>
-                <h3 class="member-name">BimBim</h3>
-                <span class="member-role">Leitung / E-Sports Coach</span>
-                <p class="member-bio">Coach für die Spieler, leitet das Training für Scrims und übernimmt die
-                    Spielanalyse.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEKTION: DEVELOPER (Gleiche Kartengröße, kleinere Überschrift) -->
-    <section class="management-section">
-        <!-- Zentrierte, kleinere Überschrift direkt über der Karte -->
-        <h2 class="section-heading-small" style="text-align: center; margin-bottom: 25px;">Developer</h2>
-
-        <!-- Nutzt dein originales Grid-System -->
-        <div class="management-grid dev-single-center">
-            <!-- Dev 1: Exakt dieselben Klassen wie bei der Teamleitung -->
-            <div class="member-card">
-                <div class="member-avatar-wrapper">
-                    <img src="/assets/logo/Dev1.png" alt="Developer Avatar" class="member-avatar">
+                <div class="info-card">
+                    <h3>Unsere Events</h3>
+                    <p>Von packenden internen Turnieren bis hin zu offiziellen Cups – wir organisieren Events, die die
+                        Gaming-Zukunft prägen.</p>
                 </div>
-                <h3 class="member-name">zmeany-</h3>
-                <span class="member-role">Developer</span>
-                <p class="member-bio">Verantwortlich für die Entwicklung von Softwarelösungen, internen Tools und die technische Infrastruktur.</p>
             </div>
-        </div>
-    </section>
-
-    <section class="games-section-compact">
-        <h2 class="section-heading-small">Unterstützte Disziplinen</h2>
-        <div class="games-badge-container">
-            <div class="game-mini-badge">Rainbow Six Siege</div>
-            <div class="game-mini-badge">Rocket League</div>
-
-        </div>
-    </section>
+        </section>
 
 
+        <section class="management-section">
+            <span class="section-badge" style="text-align: center; display: block;">VANTA TEAM</span>
+            <h2 class="section-heading-small">Teamleitung</h2>
 
-    <script src="/js/space.js"></script>
+            <div class="management-grid">
+                <div class="member-card">
+                    <div class="member-avatar-wrapper">
+                        <img src="assets/TEAMLOGOS/Leader1.png" alt="Adi" class="member-avatar">
+                    </div>
+                    <h3 class="member-name">Adi</h3>
+                    <span class="member-role">Leitung / E-Sports Management</span>
+                    <p class="member-bio">Verantwortlich für die Organisation von Scrims, die strategische Planung sowie
+                        den Aufbau von Partnerschaften.</p>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar-wrapper">
+                        <img src="assets/TEAMLOGOS/Leader2.png" alt="Suxxah" class="member-avatar">
+                    </div>
+                    <h3 class="member-name">Suxxah</h3>
+                    <span class="member-role">Leitung / Founder</span>
+                    <p class="member-bio">Gründer von Vanta E-Sports und verantwortlich für das Community Management
+                        sowie alle internen Abläufe.</p>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar-wrapper">
+                        <img src="assets/TEAMLOGOS/Leader3.png" alt="BimBim" class="member-avatar">
+                    </div>
+                    <h3 class="member-name">BimBim</h3>
+                    <span class="member-role">Leitung / E-Sports Coach</span>
+                    <p class="member-bio">Coach für die Spieler, leitet das Training für Scrims und übernimmt die
+                        Spielanalyse.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="management-section">
+            <h2 class="section-heading-small">Developer</h2>
+            <div class="management-grid dev-single-center">
+                <div class="member-card">
+                    <div class="member-avatar-wrapper">
+                        <img src="assets/TEAMLOGOS/Dev1.png" alt="zmeany-" class="member-avatar">
+                    </div>
+                    <h3 class="member-name">zmeany-</h3>
+                    <span class="member-role">Developer</span>
+                    <p class="member-bio">Verantwortlich für die Entwicklung von Softwarelösungen, internen Tools und
+                        die technische Infrastruktur.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="games-section-compact">
+            <h2 class="section-heading-small">Unterstützte Disziplinen</h2>
+            <div class="games-badge-container">
+                <div class="game-mini-badge">Rainbow Six Siege</div>
+                <div class="game-mini-badge">Rocket League</div>
+            </div>
+        </section>
+
+    </main>
+
+
 
 </body>
 
