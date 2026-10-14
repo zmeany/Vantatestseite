@@ -1,0 +1,313 @@
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 750;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px; 
+  font-family: Arial, sans-serif; /* Exakt wie in deiner main.css */
+}
+
+/* ==========================================================================
+   ABOUT US SECTION & TEXT
+   ========================================================================== */
+.about-section {
+  padding: 200px 38px 30px 38px; /* Oberen Abstand von 60px auf 90px erhöht */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container {
+  max-width: 850px;
+  margin: 0 auto 30px auto; 
+  text-align: center;
+}
+
+.about-subheading {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 15px; 
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: Arial, sans-serif;
+}
+
+.about-text {
+  color: #aaaaaa;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 15px; 
+  font-family: Arial, sans-serif;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   DIE 3 INFO-KARTEN (Unter dem Text eingebettet)
+   ========================================================================== */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px; 
+  margin-top: 25px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 30px 25px; 
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.card-title {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin: 0 0 12px 0; 
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: Arial, sans-serif;
+}
+
+.card-text {
+  color: #888888;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ==========================================================================
+   TEAMLEITUNG Sektion
+   ========================================================================== */
+.management-section {
+  padding: 30px 38px 60px 38px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.management-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px; 
+  justify-content: center;
+}
+
+.member-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px 25px; 
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.member-avatar-wrapper {
+  width: 100px; 
+  height: 100px;
+  margin: 0 auto 15px auto; 
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.member-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #111111;
+}
+
+.member-name {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin: 0 0 5px 0; 
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-family: Arial, sans-serif;
+}
+
+.member-role {
+  display: block;
+  color: #dddddd;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px; 
+  opacity: 0.7;
+  font-family: Arial, sans-serif;
+}
+
+.member-bio {
+  color: #888888;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* RESPONSIVE ANPASSUNGEN */
+@media (max-width: 700px) {
+  .about-section { padding: 40px 20px 20px 20px; }
+  .management-section { padding: 20px 20px 40px 20px; }
+  .section-heading { font-size: 2rem; margin-bottom: 20px; }
+  .about-subheading { font-size: 1.3rem; }
+}
+
+
+
+
+
+
+
+
+
+
+.games-section-compact {
+  padding: 40px 38px 80px 38px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading-small {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.games-badge-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.game-mini-badge {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cccccc;
+  padding: 10px 22px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.game-mini-badge:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+
+
+
+/* Dev */
+
+.dev-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center;
+}
+
+.dev-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 18px 20px; /* Deutlich kompakteres Padding */
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  width: 240px; /* Feste, kleinere Breite für Devs */
+}
+
+.dev-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.dev-avatar-wrapper {
+  width: 70px;  /* Von 100px auf 70px verkleinert */
+  height: 70px;
+  margin: 0 auto 10px auto; 
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.dev-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #111111;
+}
+
+.dev-name {
+  color: #ffffff;
+  font-size: 1.1rem; /* Leicht verkleinert */
+  margin: 0 0 4px 0; 
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-family: Arial, sans-serif;
+}
+
+.dev-role {
+  display: block;
+  color: #dddddd;
+  font-size: 0.75rem; /* Von 0.85rem verkleinert */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px; 
+  opacity: 0.6;
+  font-family: Arial, sans-serif;
+}
+
+.dev-bio {
+  color: #777777;
+  font-size: 0.82rem; /* Kompakterer Fließtext */
+  line-height: 1.5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.dev-single-center {
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
+}
